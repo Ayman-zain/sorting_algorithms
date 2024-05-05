@@ -11,6 +11,8 @@ listint_t *current, *prev_n, *next_n;
 
 if ((*list)->next == NULL)
 	return;
+else if (list == NULL)
+	return;
 
 current = (*list)->next;
 
