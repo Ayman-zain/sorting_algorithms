@@ -13,7 +13,8 @@ if ((*list)->next == NULL)
 	return;
 else if (list == NULL)
 	return;
-
+else if (*list == NULL)
+	return;
 current = (*list)->next;
 
 while (current != NULL)
