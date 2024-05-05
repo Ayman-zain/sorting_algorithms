@@ -9,11 +9,11 @@ void insertion_sort_list(listint_t **list)
 
 listint_t *current, *prev_n, *next_n;
 
-if ((*list)->next == NULL)
-	return;
-else if (list == NULL)
+if (list == NULL)
 	return;
 else if (*list == NULL)
+	return;
+else if ((*list)->next == NULL)
 	return;
 current = (*list)->next;
 
