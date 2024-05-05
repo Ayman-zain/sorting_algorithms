@@ -1,11 +1,11 @@
 #include "sort.h"
 /**
- * bubble_sort -  implement Bubble sort
+ * selection_sort - implement selection sort
  * @array: array of ints
  * @size: size of the array
  * Return: void
  */
-void bubble_sort(int *array, size_t size)
+void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min;
 	int temp;
@@ -21,8 +21,8 @@ void bubble_sort(int *array, size_t size)
 				min = j;
 		}
 		if (min != i)
-        		{
-            		temp = array[i];
+		{
+			temp = array[i];
 			array[i] = array[min];
 			array[min] = temp;
 			print_array(array, size);
